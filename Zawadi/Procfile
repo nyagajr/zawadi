@@ -1,0 +1,1 @@
+web: gunicorn zawadi.wsgi --log-file -

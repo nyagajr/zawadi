@@ -1,0 +1,50 @@
+
+ <header>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:teal" >
+      <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" > Zawadi</a>
+          </div>
+    <div class="container-fluid">
+        <ul class="nav navbar-nav" style="color:white;">
+            <li class="nav-item active">
+              <a href="/" style="color:white;">Home</a>
+            </li>  
+        </ul>
+        </div>
+    {% if user.is_authenticated %}
+    
+       <!-- {% if profile.profile_pic %}
+            <section> <img style="border-radius: 50% ; padding: 0.15rem;   background: linear-gradient(to right bottom, rgb(20, 207, 224), rgb(20, 207, 224));" class=" img-circle"
+            src="{{request.user.profile.profile_pic.url}}" alt="" width="50px" height="50px"> </section> <br>
+       {% else %}
+            <img style="border-radius: 50% ; padding: 0.15rem;  background: linear-gradient(to right bottom, rgb(20, 207, 224), rgb(20, 207, 224) );" class=" img-circle"
+            src="https://www.bristolbrewing.com/wp-content/uploads/2017/08/default-avatar.png" alt="" width="50px" height="50px"> </section> <br><br>
+       {% endif %} -->
+<!-- 
+            <div class="dropdown">
+            <h6><a href="#" style="color: white;">{{ user.username}}</a></h6>
+          
+            </div> -->
+           
+             
+        {% else %}
+         
+    {% endif %}      
+          
+     
+      <hr>
+      <a href="/accounts/register/" style="color:white; font-size: 13px"> SignUp </a>
+      <a style="font-size:10px;" class='btn btn-default' href="/accounts/login">Login</a>
+    </div>
+    </div>
+          </div>
+        </div>
+     </nav>
+     <div id="intro" class="view">
+      <div class="mask">
+      </div>
+    </div>
+    
+    </header>
+    

@@ -1,0 +1,106 @@
+{%extends 'base.html'%}
+
+{% block content %}
+{{block.super}}
+
+<div class="mail" style="float: centre; margin-top: -200;">
+  <form role="search" action="">
+    <input type="text" name="username" class="formStyle" placeholder="Enter address" required>
+    <button style="border:0px;" type="submit" class="formButton">Search</button>
+  </form>
+</div>
+
+
+<div class="container-fluid">
+  <div class="landing">
+    <h1 style="margin-bottom: 30px; text-align: center">How it works</h1>
+    <ul class="list-inline" style="text-align: center">
+      <li class="list-inline-item">Choose delivery location<br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8nr466SHWzcxP7WY9EnreLlUEFZAPD_xIxShCZZO6iFM0WDB3" style="height: 50px; width: 50px"></li>
+      <li class="list-inline-item">Choose restaurant<br><img src="data:image/png;base64,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"
+          style="height: 50px; width: 50px"></li>
+      <li class="list-inline-item">Choose product<br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgzUIlzi6HO8Y6KmFje14RNYXs52JLmyy-WXZUTagvEgys90ngew" style="height: 50px; width: 50px"></li>
+    </ul>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <h3>Top Vendors</h3>
+      {% for new_restaurant in restaurant %}
+      <div class="col-md-4 col-lg-4 col-sm-6 ">
+        <div style="" class="">
+
+          {% if new_restaurant.image%}
+
+          <div class="container">
+            <img class src="{{new_restaurant.image.url}}" alt="image" height="200px" width="300px" class="image">
+            <div class="overlay">
+              <h5>{{new_restaurant.name}}</h5>
+              <h5> {{new_restaurant.location}}</h5>
+              <h5>Menu </h5>
+
+            </div>
+          </div>
+
+          {% else %}
+
+          {% endif %}
+          <div style="" class="">
+
+
+          </div>
+        </div>
+        <br>
+        <br>
+      </div>
+
+      {% endfor%}
+    </div>
+  </div>
+
+
+<footer>
+  <div class="footer" style="background-color: black">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <footer>
+            <div class="footer-cont">
+              <ul class="list-inline">
+                <br>
+                <li="list-inline-item"><a href='https://www.instagram.com/about/us/'>ABOUT US</a></li>
+                  <br>
+                  <li="list-inline-item"><a href='https://help.instagram.com/285881641526716?helpref=page_content'>PRIVACY</a></li>
+                    <br>
+                    <li="list-inline-item"><a href='https://help.instagram.com/581066165581870'>TERMS</a></li>
+
+                      <li><span class='copyright'>© 2019 ZAWADI</span></li>
+              </ul>
+            </div>
+        </div>
+        <!-- </div>
+<div class="row"> -->
+        <div class="col-md-6">
+          <br>
+          <p>Contact Us</p>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fa fa-facebook fa-2x"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fa fa-twitter fa-2x"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </footer>
+
+
+
+
+  {% endblock %}

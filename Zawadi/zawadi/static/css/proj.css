@@ -1,0 +1,55 @@
+html,
+body,
+header,
+#intro {
+    height: 90%;
+}
+
+#intro {
+    background: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/24e1e378058619.5c9a1443241d9.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;  
+    transition: .5s ease; 
+    opacity: 0;
+    color: white;
+    font-size: 5px;
+    padding: 0px;  
+    text-align: center;
+    width: 300px;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+  }
+
+.top  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }
+  
